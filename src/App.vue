@@ -20,6 +20,6 @@ export default {
 <style lang="less">
 .app {
   height: 100%;
-  padding-top: 65px; 
+  padding-top: 65px;
 }
 </style>
