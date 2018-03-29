@@ -1,17 +1,10 @@
-TimeCat
+vueIviewSeed
 =======
-
-> 【此处留白】 - 图片社交分享App
 
 技术栈
 ------
 
-前端：Vue2 + Vuex + Vue-Router2 + Axios + Webpack + ES6/7 + Less + ElementUI
-
-传送门
-------
-
-如果你正在学习React，这里有一个关于React的[Demo](https://github.com/hicoldcat/CornerCat)。
+前端：Vue2 + Vuex + Vue-Router2 + Axios + Webpack + ES6/7 + Less + iview
 
 项目安装
 --------
@@ -19,11 +12,8 @@ TimeCat
 ```bash
 
 # clone或者download项目
-git clone https://github.com/hicoldcat/TimeCat.git
-
+https://github.com/wuxiangpoi/vue.git
 # 进入项目文件夹
-cd TimeCat
-
 # 安装依赖
 npm install
 
@@ -88,35 +78,4 @@ npm run build
 项目说明
 --------
 
-> 项目是做一个基于vue全家桶的移动端图片分享app的Demo
-
-项目风格
---------
-
-> 简约 文艺 清新
-
-项目截图
---------
-
-#### *【片刻留白】---每日分享模块[daily]*
-
-![](https://github.com/hicoldcat/TimeCat/blob/master/screenshots/daily.jpg?raw=true)
-
-#### *【回声留白】---音乐分享模块[vocality]*
-
-![](https://github.com/hicoldcat/TimeCat/blob/master/screenshots/vocality.jpg?raw=true)
-
-#### *【字符留白】---随笔分享模块[essay]*
-
-![](https://github.com/hicoldcat/TimeCat/blob/master/screenshots/essay.jpg?raw=true)
-
-#### *【半步留白】---游记分享模块[travels]*
-
-![](https://github.com/hicoldcat/TimeCat/blob/master/screenshots/travels.jpg?raw=true)
-
-贡献
-----
-
-> 本人前端小菜鸟一枚，如果有任何的问题，欢迎给我提issue
->
-> 如果此项目对你有帮助，可以给个star哦
+> 项目是做一个基于vue全家桶的脚手架
