@@ -31,7 +31,7 @@ export default {
     },
     toast(info, type) {
       let option = {
-        content: 'I',
+        content: info,
         duration: 2
       }
       switch (type) {

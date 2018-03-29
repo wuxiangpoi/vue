@@ -1,5 +1,6 @@
 <template>
 	<div class="app">
+    <v-header></v-header>
 		<router-view class="content"></router-view>
 	</div>
 </template>
@@ -9,13 +10,9 @@ import { mapGetters, mapActions } from "vuex";
 
 export default {
   data() {
-    return {
-	  
-    };
+    return {};
   },
-  computed: mapGetters({
-    
-  }),
+  computed: mapGetters({}),
   components: {}
 };
 </script>
@@ -23,8 +20,6 @@ export default {
 <style lang="less">
 .app {
   height: 100%;
-}
-.content {
-  margin-top: 60px;
+  padding-top: 65px; 
 }
 </style>

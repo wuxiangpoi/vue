@@ -1,3 +1,3 @@
-import header from './Header'
+import header from './header'
 
 export default { header}
