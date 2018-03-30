@@ -1,6 +1,6 @@
 // 项目入口，配置全局vue
 import Vue from 'vue'
-import VueRouter from './router/routes.js'
+import router from './router/'
 import Store from './store/index.js'
 
 import './assets/less/index.less'
@@ -29,11 +29,11 @@ import minxin from './util/minxins.js'
 Vue.mixin(minxin);
 
 new Vue({
-	router:VueRouter,
+	router:router,
 	store:Store,
 	template:'<App/>',
 	components: {App}
 }).$mount('#app')
 
 // 默认进入商品模块
-VueRouter.push({ path: '/home' })
+router.push({ path: '/home' })

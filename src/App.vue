@@ -4,6 +4,7 @@
       <v-header></v-header>
     </header>
     <div class="app-content">
+            {{userData.name}}
 		  <router-view class="content"></router-view>
     </div>
     <div class="app-footer"></div>
@@ -11,13 +12,21 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
+import { mapGetters } from "vuex";
 
 export default {
   data() {
     return {};
   },
-  computed: mapGetters({}),
+  computed: mapGetters({
+    userData: "userData"
+  }),
+  created() {
+    this.fetch(this.api.auth + "getUserSrc", {}, (res) => {
+      this.dispatch("login", res.content);
+    });
+  },
+  methods: {},
   components: {}
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
 <div class="wrapper-header-nav">
   <a class="header-logo">
-      <img src="https://file.iviewui.com/dist/03635a3c88122ad605117128f3fda0ca.png" alt="">
+      <img :src="userData.root_logo" alt="">
     </a>
 <div class="wrapper-header-nav-list">
     <Menu mode="horizontal" active-name="1">
@@ -40,13 +40,16 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
+import { mapGetters } from "vuex";
 
 export default {
   data() {
     return {};
   },
-  computed: mapGetters({}),
+  created() {},
+  computed: mapGetters({
+    userData: "userData"
+  }),
   methods: {}
 };
 </script>

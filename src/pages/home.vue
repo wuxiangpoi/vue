@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-dfdsf
   </div>
 </template>
 
@@ -12,9 +11,7 @@ export default {
     return {};
   },
   created() {
-    // this.fetch(this.api.topics,{},(res)=>{
-    //   console.log(res)
-    // })
+    
   },
   methods: {
     fetchData() {}

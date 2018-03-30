@@ -1,5 +1,6 @@
 'use strict'
-const baseUrl = 'http://47.92.116.16:9090';
+const baseUrl = process.env.NODE_ENV !== 'production'?'http://47.92.116.16:9090/':''
+
 import Vue from 'vue'
 import {
   post,
@@ -16,7 +17,7 @@ export default {
   data() {
     return {
       api: {
-        topics: baseUrl + '/api/terminal/getTerminalPageList'
+        auth: baseUrl + '/api/auth/'
       }
     }
   },
@@ -48,6 +49,9 @@ export default {
           this.$Message.error(info,option);
           break;
       }
+    },
+    dispatch(name,data){
+      this.$store.dispatch(name,data);
     }
   }
 }
