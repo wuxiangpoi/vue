@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-
+dfdsf
   </div>
 </template>
 
@@ -9,19 +9,15 @@ const ERR_OK = 0;
 
 export default {
   data() {
-    return {
-     
-    };
+    return {};
   },
   created() {
-    this.fetch(this.api.topics,{},(res)=>{
-      console.log(res)
-    })
+    // this.fetch(this.api.topics,{},(res)=>{
+    //   console.log(res)
+    // })
   },
   methods: {
-    fetchData(){
-
-    }
+    fetchData() {}
   },
   components: {}
 };
@@ -29,7 +25,5 @@ export default {
 
 <style lang="less" scope>
 .home {
-  
-  
 }
 </style>

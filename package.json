@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "axios": "^0.15.3",
+    "babel-polyfill": "^6.26.0",
     "iview": "^2.11.0",
     "vue": "^2.1.10",
     "vue-router": "^2.2.0",

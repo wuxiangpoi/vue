@@ -1,6 +1,8 @@
 <template>
-<header class="wrapper-header">
-  <div class="wrapper-header-nav">
+<div class="wrapper-header-nav">
+  <a class="header-logo">
+      <img src="https://file.iviewui.com/dist/03635a3c88122ad605117128f3fda0ca.png" alt="">
+    </a>
 <div class="wrapper-header-nav-list">
     <Menu mode="horizontal" active-name="1">
         <MenuItem name="1">
@@ -33,8 +35,7 @@
     </Menu>
   </div>
   </div>
-  
-  </header>
+ 
   
 </template>
 
@@ -50,20 +51,20 @@ export default {
 };
 </script>
 
-<style lang="less">
-.wrapper-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  background: #fff;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
-}
+<style lang="less" scope>
 .wrapper-header-nav {
   width: 95%;
   height: 65px;
   margin: 0 auto;
+}
+.header-logo {
+  height: 50px;
+  margin-top: 8px;
+  float: left;
+  display: block;
+  img {
+    height: 100%;
+  }
 }
 .wrapper-header-nav-list {
   float: right;
